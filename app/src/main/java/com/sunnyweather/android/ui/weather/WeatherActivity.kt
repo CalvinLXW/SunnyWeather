@@ -89,7 +89,7 @@ class WeatherActivity : AppCompatActivity() {
         })
     }
 
-    private fun refreshWeather() {
+    fun refreshWeather() {
         viewModel.refreshWeather(viewModel.locationLng,viewModel.locationLat)
         swipeRefresh.isRefreshing = true
     }
